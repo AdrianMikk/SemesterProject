@@ -1,0 +1,156 @@
+:root {
+    /* font-family: Andika; */
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav, 
+#menu-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+    display: block;
+}
+
+header {
+    position: relative;
+    background: #37BD79;
+    color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* img {
+    max-width: 100%;
+} */
+
+.index-main {
+    background: url("/images/national-cancer-institute-ct10qdGv1hQ-unsplash\ \(1\)-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.explore-main {
+    background: url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.exhibition-main {
+    background: url("/images/scientific-2040795_1280-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.event-main {
+    background: url("/images/andrew-ruiz-348421-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.visit-main {
+    background: url("/images/toa-heftiba-412579-min-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.involve-main {
+    background: url("/images/caroline-hernandez-yl1wEVqEY8k-unsplash-min\ \(1\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home-text {
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
+    text-align: center;
+}
+
+.home-h1 {
+    color: #F4E604;
+}
+
+.home-h2 {
+    color: #A7E237;
+    font-weight: 100;
+}
+
+.home-buttons {
+    color: #fff;
+    text-align: center;
+    /* font-weight: bold; */
+    display: grid;
+}
+
+.explore-text {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+nav {
+    position: absolute;
+    background: #37BD79;
+    right: 0px;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.hamburger-icon {
+    display: flex;
+    justify-content: end;
+    
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}
