@@ -1,3 +1,7 @@
+h1, h2 {
+    Margin: 0;
+}
+
 :root {
     /* font-family: Andika; */
 }
@@ -41,9 +45,8 @@ header {
 }
 
 .explore-main {
-    background: url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
-    background-size: cover;
-    background-position: center;
+    background: no-repeat center/100% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
+    background-position: center top;
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
@@ -62,7 +65,7 @@ header {
 }
 
 .event-main {
-    background: url("/images/andrew-ruiz-348421-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/andrew-ruiz-348421-min.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -73,7 +76,7 @@ header {
 }
 
 .visit-main {
-    background: url("/images/toa-heftiba-412579-min-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/toa-heftiba-412579-min-min.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +87,7 @@ header {
 }
 
 .involve-main {
-    background: url("/images/caroline-hernandez-yl1wEVqEY8k-unsplash-min\ \(1\).jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url("/images/caroline-hernandez-yl1wEVqEY8k-unsplash-min\ \(1\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,6 +97,7 @@ header {
     min-height: 100vh;
 }
 
+/*Home page*/
 .home-text {
     background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5));
     text-align: center;
@@ -101,26 +105,71 @@ header {
 
 .home-h1 {
     color: #F4E604;
+    margin: 0;
+    padding-top: 20px;
 }
 
 .home-h2 {
     color: #A7E237;
     font-weight: 100;
+    padding-bottom: 20px;
 }
 
 .home-buttons {
     color: #fff;
     text-align: center;
     /* font-weight: bold; */
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    align-items: space-between;
 }
 
+.cta {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border: 1px solid black;
+    background-color: #F4E604;
+    border-radius: 15px;
+    margin: 10px auto;
+    height: 67px;
+    width: 156px;
+}
+
+/* Explore */
 .explore-text {
     color: #fff;
     font-weight: bold;
     text-align: center;
-    margin-top: 3rem;
 }
+
+.explore-h1 {
+    padding-top: 80px;
+}
+
+.kid-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* .cropped-image {
+    width: 100%;
+  
+    aspect-ratio: 20 / 3;
+  
+    background-image: url(/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg);
+    background-position: center 32.5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+  } */
 
 nav {
     position: absolute;
@@ -139,6 +188,153 @@ nav a {
     justify-content: end;
     
 }
+
+/* Special Events */
+
+.event-text {
+    text-align: center;
+    color: #fff;
+}
+
+.event-h1 {
+    color: #fff;
+}
+
+.event-h2 {
+    font-weight: 100;
+    color: #F4E604;
+}
+
+.event-h3 {
+    color: #A7E237;
+}
+
+.night-h3 {
+    color: #37BD79;
+}
+
+.energetica-h3 {
+    color: #308FAC;
+}
+
+/* Visit Us */
+
+.visit-text {
+    text-align: center;
+    color: #fff;
+}
+
+.visit-h1 {
+    color: #fff;
+}
+
+.location-h3 {
+    color: #F4E604;
+}
+
+.visit-h3 {
+    color: #A7E237;
+}
+
+.access-h3 {
+    color: #308FAC;
+}
+
+.food-h3 {
+    color: #A7E237;
+}
+
+.shop-h3 {
+    color: #F4E604;
+}
+
+/*Get Involved*/
+
+.involve-text {
+    text-align: center;
+    color: #fff;
+}
+
+.involve-h2 {
+    color: #F4E604;
+}
+
+.involve-h3 {
+    color: #37BD79;
+}
+
+.intern-h3 {
+    color: #308FAC;
+}
+
+.contact__container {
+    border-radius: 5px;
+    width: 90%;
+  }
+
+  .contact p {
+    text-align: center;
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: #fff;
+  }
+  
+  .contact_form__button {
+    display: inline-block;
+    background: var(--logo-blue);
+    text-align: center;
+    font-weight: bolder;
+    font-size: 120%;
+    line-height: 60px;
+    border: none;
+    padding: 0;
+    color: #fff;
+    border-radius: 15px;
+    margin: auto;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .contact_form__button:hover,
+  .contact_form__button:active {
+    background: #0c4c5c;
+    transition: 0.5s;
+  }
+  
+  input[type="text"],
+  select,
+  textarea {
+    margin: 0 auto;
+    width: 100%;
+    height: 36px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  input[type="send"] {
+    background-color: var(--logo-blue);
+    color: white;
+    text-align: center;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 6rem;
+    align-self: center;
+  }
+  
+  input[type="send"]:hover {
+    background-color: var(--hover-blue);
+  }
 
 @media (min-width: 600px) {
     nav {

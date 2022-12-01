@@ -13,25 +13,61 @@
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon"><i class="fas fa-bars"></i></label>
       <nav>
-        <a class="active" href="index.html">Home</a>
+        <a href="index.html">Home</a>
         <a href="explore.html">Explore</a>
         <a href="exhibition.html">Exhibition</a>
         <a href="event.html">Special Events</a>
         <a href="visit.html">Visit</a>
-        <a href="involve.html">Get Involved</a>
+        <a class="active" href="involve.html">Get Involved</a>
       </nav>
     </header>
     <main class="involve-main">
-      <section class="home-text">
-        <h1 class="home-h1">Community Science Center</h1>
-        <h2 class="home-h2">Explore Together</h2>
+      <section class="involve-text">
+        <h1 class="involve-h1">Get Involved</h1>
+        <h2 class="involve-h2">Support</h2>
+        <p class="support-p">There are various ways you can support the museum. Donations are very welcome and are an important way we keep this museum open and accessible to the whole community.
+          You can also support us by donating items of interest to the museum's collections. If you have some item or collection that you think others would enjoy, please let us know by contacting our Collections Department and they will be able to assist you.</p>
+        <h3 class="involve-h3">Volunteer</h3>
+        <p class="volunteer-p">Get your family together for an exciting night in the museum as you sleep over beside dinosaurs and science displays. Bring your own sleeping bag and get ready to rough it as we go exploring the wonders of science.</p>
+        <h3 class="intern-h3">Internships</h3>
+        <p class="intern-p">On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It's a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to 'Wind Island' that shows how turbines are able to use and control wind to create power.</p>
       </section>
-      <div class="home-buttons">
-        <a href="explore.html" class="cta">Explore</a>
-        <a href="exhibition.html" class="cta">Exhibition</a>
-        <a href="event.html" class="cta">Events</a>
-        <a href="visit.html" class="cta">Visit</a>
-        <a href="involve.html" class="cta">Get involved</a>
+      <div class="contact__container">
+        <form action="index.html" class="contact__form">
+          <label for="fname">Full Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fullname"
+            placeholder="Enter full name"
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter email here"
+          />
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Short description"
+          />
+
+          <label for="yourmessage">Your Message</label>
+          <input
+            type="text"
+            id="yourmessage"
+            name="yourmessage"
+            placeholder="Enter message here"
+            style="height: 200px"
+          />
+          <button type="submit" class="contact_form__button">Send</button>
+        </form>
       </div>
     </main>
  </body>
