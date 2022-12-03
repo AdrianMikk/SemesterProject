@@ -3,13 +3,25 @@ h1, h2 {
 }
 
 :root {
-    /* font-family: Andika; */
+    font-family: Andika, Verdana, Geneva, Tahoma, sans-serif;
+    --color-blue: #0457AC;
+    --color-lightblue: #308FAC;
+    --color-green: #37BD79;
+    --color-lime: #A7E237;
+    --color-yellow: #F4E604;
+    --color-white: #fff;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 nav, 
@@ -45,13 +57,14 @@ header {
 }
 
 .explore-main {
-    background: no-repeat center/100% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
-    background-position: center top;
+    display: flex;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), no-repeat center/100% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 250px;
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
+    align-items: center;
 }
 
 .exhibition-main {
@@ -122,7 +135,6 @@ header {
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    align-items: space-between;
 }
 
 .cta {
@@ -139,6 +151,35 @@ header {
     width: 156px;
 }
 
+.home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.explore-button {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
+}
+
+.exhibition-button {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/scientific-2040795_1280-min.jpg");
+}
+
+.events-button {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/andrew-ruiz-348421-min.jpg");
+}   
+
+.visit-button {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/toa-heftiba-412579-min-min.jpg");
+}
+
+.involve-button {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/caroline-hernandez-yl1wEVqEY8k-unsplash-min\ \(1\).jpg");
+}
+
 /* Explore */
 .explore-text {
     color: #fff;
@@ -150,26 +191,61 @@ header {
     padding-top: 80px;
 }
 
-.kid-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+.explore-content-wrapper {
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    min-height: 100vh;
 }
 
-/* .cropped-image {
+.explore-img {
+    object-fit: contain;
+    object-position: center;
     width: 100%;
-  
-    aspect-ratio: 20 / 3;
-  
-    background-image: url(/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg);
-    background-position: center 32.5%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 300px;
-  } */
+    max-height: 350px;
+}
+
+.explore-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.explore-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Exhibition */
+
+.exhibition-content-wrapper {
+    width: 90%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exhibition-img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    max-height: 350px;
+}
+
+.exhibition-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.exhibition-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 nav {
     position: absolute;
@@ -349,4 +425,25 @@ nav a {
     nav a {
         display: inline-block;
     }
+
+    .explore-main {
+        height: 450px;
+    }
+
+    .explore-content-wrapper {
+        flex-direction: row;
+    }
+    
+    .explore-content {
+        flex-direction: row;
+    }
+
+    .exhibition-content-wrapper {
+        flex-direction: row;
+    }
+
+    .exhibition-content {
+        flex-direction: row;
+    }
+
 }
