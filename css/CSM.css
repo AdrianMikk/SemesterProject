@@ -218,7 +218,29 @@ header {
     gap: 1rem;
 }
 
+.kid-h2 {
+    color: #37BD79;
+}
+
+.teacher-h2 {
+    color: #37BD79;
+}
+
+.researcher-h2 {
+    color: #37BD79;
+}
+
 /* Exhibition */
+
+.exhibition-text {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.explore-h1 {
+    padding-top: 80px;
+}
 
 .exhibition-content-wrapper {
     width: 90%;
@@ -246,6 +268,11 @@ header {
     flex-direction: column;
     gap: 1rem;
 }
+
+
+/* .exhibition-text {
+    color: white;
+} */
 
 nav {
     position: absolute;
