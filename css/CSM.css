@@ -246,7 +246,6 @@ footer {
 
 .exhibition-content-wrapper {
     width: 90%;
-    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -329,7 +328,7 @@ nav a {
     background-position: bottom;
     background-size: cover;
     min-height: 700px;
-    width: 100%;
+    width: 98.9%;
 }
 
 /* Special Events */
@@ -337,7 +336,7 @@ nav a {
 .event-text {
     text-align: center;
     color: var(--color-white);
-    font-weight: 900;
+    margin: auto 20px;
 }
 
 .event-h1 {
@@ -366,7 +365,7 @@ nav a {
 .visit-text {
     text-align: center;
     color: var(--color-white);
-    font-weight: 900;
+    margin: auto 20px;
 }
 
 .visit-h1 {
@@ -398,6 +397,7 @@ nav a {
 .involve-text {
     text-align: center;
     color: var(--color-white);
+    margin: auto 20px;
 }
 
 .involve-h1 {
