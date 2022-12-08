@@ -1,5 +1,11 @@
 # SemesterProject
 
-Semester Project 1
+Community science museum delivery.
 
-Huske report
+# Fonts: 
+
+# Colors:
+
+# Git
+
+# Netlify
