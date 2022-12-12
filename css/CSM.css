@@ -34,8 +34,22 @@ nav,
     display: block;
 }
 
-.logo-img {
-    padding-left: 100px;
+.nav-logo {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+header {
+    position: relative;
+    background: var(--color-green);
+    color: #fff;
+    padding: 15px;
+    font-size: 1rem;
 }
 
 footer {
@@ -269,16 +283,26 @@ footer {
     gap: 1rem;
 }
 
-.cosmology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/leandra-rieger-wk966Ouqces-unsplash-min.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 700px;
+nav {
+    position: absolute;
+    background: var(--color-green);
+    right: 0px;
 }
 
-.evolution-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), center/100% url("/images/eugene-zhyvchik-xJY-7gtC38o-unsplash-min (2).jpg");
+nav a {
+    display: block;
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+
+.hamburger-icon {
+    display: flex;
+    justify-content: end;
+    
+}
+
+.cosmology-img {
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/leandra-rieger-wk966Ouqces-unsplash-min.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -470,6 +494,19 @@ footer {
 /* Media Queries */
 
 @media (min-width: 600px) {
+    nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
     .home-buttons {
         /* max-width: fit-content; */
     }
