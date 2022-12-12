@@ -16,81 +16,7 @@ h1, h2 {
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-  }
-  
-a {
-    text-decoration: none;
-   }
-   
-li {
-    list-style: none;
-   }
-.nav_bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--color-green);
-    color: #fff;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
-   
-   }
-   
-.nav_links a {
-    color: #fff;
-   }
-   
-.logo img {
-    width: 30px;
-   }
-   
-.menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-   }
-   
-.menu li {
-    padding: 5px 14px;
-   }
-  
-input[type=checkbox]{
-    display: none;
-   } 
-   
-.hamburger {
-    display: none;
-    font-size: 24px;
-    user-select: none;
-   }
-   
-@media (max-width: 768px) {
-   
-   .menu { 
-    display:none;
-    position: absolute;
-    background-color:var(--color-green);
-    right: 0;
-    left: 0;
-    text-align: center;
-    padding: 16px 0;
-   }
-   
-   .menu li + li {
-    margin-top: 12px;
-   
-   }
-   input[type=checkbox]:checked ~ .menu {
-    display: block;
-   
-   }
-   .hamburger {
-    display: block;
-   }
-  }
+}
 
 main {
     display: flex;
@@ -108,23 +34,8 @@ nav,
     display: block;
 }
 
-.nav-logo {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 5px;
-}
-
-header {
-    position: relative;
-    background: var(--color-green);
-    color: #fff;
-    padding: 15px;
-    font-size: 1rem;
+.logo-img {
+    padding-left: 100px;
 }
 
 footer {
@@ -358,24 +269,6 @@ footer {
     gap: 1rem;
 }
 
-nav {
-    position: absolute;
-    background: var(--color-green);
-    right: 0px;
-}
-
-nav a {
-    display: block;
-    color: var(--color-white);
-    padding: 10px 20px;
-}
-
-.hamburger-icon {
-    display: flex;
-    justify-content: end;
-    
-}
-
 .cosmology-img {
     background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/leandra-rieger-wk966Ouqces-unsplash-min.jpg");
     background-repeat: no-repeat;
@@ -414,7 +307,7 @@ nav a {
     background-position: bottom;
     background-size: cover;
     min-height: 700px;
-    width: 100%;
+    width: 101%;
 }
 
 /* Special Events */
@@ -577,19 +470,6 @@ nav a {
 /* Media Queries */
 
 @media (min-width: 600px) {
-    nav {
-        display: block;
-        position: static;
-    }
-
-    .hamburger-icon {
-        display: none;
-    }
-
-    nav a {
-        display: inline-block;
-    }
-
     .home-buttons {
         /* max-width: fit-content; */
     }
