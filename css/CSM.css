@@ -10,6 +10,7 @@ h1, h2 {
     --color-lime: #A7E237;
     --color-yellow: #F4E604;
     --color-white: #fff;
+    --color-black: #0000;
 }
 
 body {
@@ -33,11 +34,20 @@ nav,
     display: block;
 }
 
+.nav-logo {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
     position: relative;
     background: var(--color-green);
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     font-size: 1rem;
 }
 
@@ -94,7 +104,6 @@ footer {
 }
 
 .visit-main {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), no-repeat center/100% url("/images/toa-heftiba-412579-min-min.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,10 +146,10 @@ footer {
 .home-buttons {
     color: var(--color-white);
     text-align: center;
-    /* font-weight: bold; */
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .cta {
@@ -179,7 +188,7 @@ footer {
 }   
 
 .visit-button {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/toa-heftiba-412579-min-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), center/80% url("/images/syntax-error-xSQZq6tC8AQ-unsplash\ 1-min\ \(1\).jpg");
 }
 
 .involve-button {
@@ -242,10 +251,11 @@ footer {
     color: var(--color-white);
     font-weight: bold;
     text-align: center;
+    padding: 10px 20px;
 }
 
 .exhibition-content-wrapper {
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,7 +309,7 @@ nav a {
 }
 
 .evolution-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/eugene-zhyvchik-xJY-7gtC38o-unsplash-min (2).jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.6)), center/100% url("/images/eugene-zhyvchik-xJY-7gtC38o-unsplash-min (2).jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -307,7 +317,7 @@ nav a {
 }
 
 .biology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/national-cancer-institute-1PpyUZceg_I-unsplash-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/national-cancer-institute-1PpyUZceg_I-unsplash-min.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -315,7 +325,7 @@ nav a {
 }
 
 .robotics-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/jason-leung-HBGYvOKXu8A-unsplash-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/jason-leung-HBGYvOKXu8A-unsplash-min.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -323,12 +333,12 @@ nav a {
 }
 
 .ecology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/jan-kopriva-nex3P5iBnPg-unsplash-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/jan-kopriva-nex3P5iBnPg-unsplash-min.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     min-height: 700px;
-    width: 98.9%;
+    width: 101%;
 }
 
 /* Special Events */
@@ -364,16 +374,16 @@ nav a {
 
 .visit-text {
     text-align: center;
-    color: var(--color-white);
+    color: black;
     margin: auto 20px;
 }
 
 .visit-h1 {
-    color: var(--color-white);
+    color: black;
 }
 
 .location-h3 {
-    color: var(--color-yellow);
+    color: var(--color-lightblue)
 }
 
 .visit-h3 {
@@ -389,7 +399,7 @@ nav a {
 }
 
 .shop-h3 {
-    color: var(--color-yellow);
+    color: var(--color-lightblue)
 }
 
 /*Get Involved*/
@@ -502,6 +512,10 @@ nav a {
 
     nav a {
         display: inline-block;
+    }
+
+    .home-buttons {
+        /* max-width: fit-content; */
     }
 
     .explore-main {
