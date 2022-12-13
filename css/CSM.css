@@ -45,16 +45,32 @@ nav,
 }
 
 header {
-    position: relative;
+    display: flex;
     background: var(--color-green);
     color: #fff;
     padding: 15px;
     font-size: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
-    font-weight: bold;
-    text-align: center;
+    /* font-weight: bold; */
+    /* text-align: center; */
+    background-color: var(--color-green);
+    width: 100%;
+    min-height: 10vh;
+    float:right;
+}
+
+.logo-img {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.logo-img > img {
+    height: 100%;
 }
 
 .hours-h3 {
@@ -287,6 +303,7 @@ nav {
     position: absolute;
     background: var(--color-green);
     right: 0px;
+    top: 87px;
 }
 
 nav a {
@@ -297,8 +314,6 @@ nav a {
 
 .hamburger-icon {
     display: flex;
-    justify-content: end;
-    
 }
 
 .cosmology-img {
@@ -331,7 +346,7 @@ nav a {
     background-position: bottom;
     background-size: cover;
     min-height: 700px;
-    width: 101%;
+    width: 100%;
 }
 
 /* Special Events */
