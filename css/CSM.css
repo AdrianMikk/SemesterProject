@@ -14,16 +14,13 @@ h1, h2 {
 }
 
 body {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    max-width: 1440px;
+    height: 100vh;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+main {}
 
 nav, 
 #menu-checkbox {
@@ -54,13 +51,33 @@ header {
     justify-content: space-between;
 }
 
+nav {
+    position: absolute;
+    background: var(--color-green);
+    right: 0px;
+    top: 87px;
+    z-index: 1;
+}
+
+nav a {
+    display: block;
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+
+.hamburger-icon {
+    display: flex;
+}
+
 footer {
-    /* font-weight: bold; */
-    /* text-align: center; */
-    background-color: var(--color-green);
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100%;
     width: 100%;
     min-height: 10vh;
     float:right;
+}
+
+footer img {
+    
 }
 
 .logo-img {
@@ -84,30 +101,6 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
-}
-
-.explore-main {
-    display: flex;
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), no-repeat center/100% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.exhibition-main {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), no-repeat center/100% url("/images/scientific-2040795_1280-min.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .event-main {
@@ -116,19 +109,8 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
+    padding-bottom: 50px;
     justify-content: center;
-    min-height: 100vh;
-}
-
-.visit-main {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    justify-content: center;
-    min-height: 100vh;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .involve-main {
@@ -138,7 +120,6 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     justify-content: center;
-    min-height: 100vh;
     padding-bottom: 40px;
 }
 
@@ -160,6 +141,8 @@ footer {
     padding-bottom: 20px;
 }
 
+/* Buttons */ 
+
 .home-buttons {
     color: var(--color-white);
     text-align: center;
@@ -175,12 +158,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    border: 1px solid black;
     background-color: #F4E604;
     border-radius: 15px;
     margin: 10px auto;
-    height: 67px;
-    width: 156px;
+    height: 180px;
+    width: 180px;
 }
 
 .home-button {
@@ -193,160 +175,127 @@ footer {
 }
 
 .explore-button {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/stem-t4l-l862hX_FET8-unsplash-min-min-min.jpg");
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/stem-t4l-l862hX_FET8-unsplash\ 2-min.jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 .exhibition-button {
     background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/scientific-2040795_1280-min.jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 .events-button {
     background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/andrew-ruiz-348421-min.jpg");
+    background-repeat: none;
+    background-size: cover;
 }   
 
 .visit-button {
     background: linear-gradient(rgb(0, 0, 0, 0.1), rgb(0, 0, 0, 0.1)), center/80% url("/images/syntax-error-xSQZq6tC8AQ-unsplash\ 1-min\ \(1\).jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 .involve-button {
     background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80% url("/images/caroline-hernandez-yl1wEVqEY8k-unsplash-min\ \(1\).jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
 /* Explore */
-.explore-text {
-    color: var(--color-white);
-    font-weight: bold;
+
+.explore-content {
+    width: 100%
+}
+
+.explore-content img {
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.wrap-content h2 {
+    color: var(--color-green);
     text-align: center;
 }
 
+.wrap-content-explore img {
+    width: 211px;
+    height: 193px;
+    object-fit: cover;
+}
+
+.wrap-content-explore p {
+    max-width: 211px;
+}
+
 .explore-h1 {
-    padding-top: 80px;
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80%;
+    text-align: center;
+    color: var(--color-white);
+    margin-top: -85px;
+    margin-bottom: 50px;
+    font-size: 3rem;
 }
 
-.explore-content-wrapper {
-    width: 90%;
-    margin-top: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.explore-img {
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    max-height: 350px;
-}
-
-.explore-content-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.explore-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.kid-h2 {
-    color: var(--color-green);
-}
-
-.teacher-h2 {
-    color: var(--color-green);
-}
-
-.researcher-h2 {
+.explore-h2 {
     color: var(--color-green);
 }
 
 /* Exhibition */
 
-.exhibition-text {
-    color: var(--color-white);
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.exhibition-content-wrapper {
-    /* width: 90%; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.exhibition-img {
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    max-height: 350px;
-}
-
-.exhibition-content-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    color: white;
-    padding: 1rem;
-}
-
 .exhibition-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    width: 100%
 }
 
-nav {
-    position: absolute;
-    background: var(--color-green);
-    right: 0px;
-    top: 87px;
-}
-
-nav a {
-    display: block;
-    color: var(--color-white);
-    padding: 10px 20px;
-}
-
-.hamburger-icon {
-    display: flex;
-}
-
-.cosmology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/100% url("/images/leandra-rieger-wk966Ouqces-unsplash-min.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 700px;
-}
-
-.biology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/national-cancer-institute-1PpyUZceg_I-unsplash-min.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 700px;
-}
-
-.robotics-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/jason-leung-HBGYvOKXu8A-unsplash-min.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 700px;
-}
-
-.ecology-img {
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), center/100% url("/images/jan-kopriva-nex3P5iBnPg-unsplash-min.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: cover;
-    min-height: 700px;
+.exhibition-content img {
     width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.wrap-content-exhibition h2 {
+    color: var(--color-green);
+    text-align: center;
+}
+
+.wrap-content-exhibition img {
+    width: 211px;
+    height: 193px;
+    object-fit: cover;
+}
+
+.wrap-content-exhibition p {
+    max-width: 211px;
+}
+
+.exhibition-h1 {
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80%;
+    text-align: center;
+    color: var(--color-white);
+    margin-top: -85px;
+    margin-bottom: 50px;
+    font-size: 3rem;
+}
+
+.exhibition-h2 {
+    color: black;
 }
 
 /* Special Events */
@@ -354,11 +303,14 @@ nav a {
 .event-text {
     text-align: center;
     color: var(--color-white);
-    margin: auto 20px;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .event-h1 {
     color: var(--color-white);
+    font-size: 2rem;
 }
 
 .event-h2 {
@@ -380,34 +332,46 @@ nav a {
 
 /* Visit Us */
 
-.visit-text {
+.visit-content {
+    width: 100%
+}
+
+.visit-content img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.wrap-content-exhibition h2 {
+    color: var(--color-green);
     text-align: center;
-    color: black;
-    margin: auto 20px;
 }
 
-.visit-h1 {
-    color: black;
+.wrap-content-exhibition img {
+    width: 211px;
+    height: 193px;
+    object-fit: cover;
 }
 
-.location-h3 {
-    color: var(--color-lightblue)
+.wrap-content-exhibition p {
+    max-width: 211px;
 }
 
-.visit-h3 {
-    color: var(--color-lime);
-}
-
-.access-h3 {
-    color: var(--color-lightblue);
-}
-
-.food-h3 {
-    color: var(--color-lime);
-}
-
-.shop-h3 {
-    color: var(--color-lightblue)
+.exhibition-h1 {
+    position: relative;
+    background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), center/80%;
+    text-align: center;
+    color: var(--color-white);
+    margin-top: -85px;
+    margin-bottom: 50px;
+    font-size: 3rem;
 }
 
 /*Get Involved*/
@@ -415,47 +379,52 @@ nav a {
 .involve-text {
     text-align: center;
     color: var(--color-white);
-    margin: auto 20px;
+    max-width: 600px;
+    margin: auto;
+    padding-top: 50px;
 }
 
 .involve-h1 {
-    padding-top: 5rem;
+    color: var(--color-white);
+    font-size: 2rem;
 }
 
 .involve-h2 {
+    font-weight: 100;
     color: var(--color-yellow);
-    padding-top: 2rem;
 }
 
 .involve-h3 {
-    color: var(--color-green);
+    color: var(--color-lime);
 }
 
 .intern-h3 {
-    color: var(--color-lightblue);
+    color: var(--color-green);
 }
 
 /* Contact Form */
 
-.contact__container {
+.contact-container {
     border-radius: 5px;
-    width: 60%;
+    max-width: 50%;
+    justify-content: center;
+    margin: auto;
   }
 
 .contact p {
     text-align: center;
   }
   
-.contact__form {
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     color: var(--color-white);
   }
   
-.contact_form__button {
+.contact-form-button {
     display: inline-block;
-    background: var(--logo-blue);
+    background: var(--color-blue);
     text-align: center;
     font-weight: bolder;
     font-size: 120%;
@@ -471,8 +440,8 @@ nav a {
     cursor: pointer;
 }
   
-.contact_form__button:hover,
-.contact_form__button:active {
+.contact_form-button:hover,
+.contact_formbutton:active {
     background: var(--color-blue);
     transition: 0.5s;
 }
@@ -508,7 +477,7 @@ nav a {
 
 /* Media Queries */
 
-@media (min-width: 600px) {
+@media (min-width: 810px)   {
     nav {
         display: block;
         position: static;
@@ -521,6 +490,22 @@ nav a {
     nav a {
         display: inline-block;
     }
+    
+}
+
+@media (min-width: 600px) {
+    /* nav {
+        display: block;
+        position: static;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+    } */
 
     .home-buttons {
         /* max-width: fit-content; */
