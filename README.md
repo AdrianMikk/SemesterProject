@@ -1,6 +1,6 @@
-# SemesterProject
+# SemesterProject 1
 
-Community science museum delivery.
+For this semester project we were tasked to make prototype and a working site for a museum called the Community Science Museum. It's core target audience was primary and middle school children for the age of 7-15 and families with young children. I made a clean and simple site with some bright colors from the color palette that I chose, that you can see below.
 
 # Fonts: 
 
