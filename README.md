@@ -1,4 +1,4 @@
-# SemesterProject 1
+# SemesterProject 1 - Community Science Museum
 
 ![csm](https://github.com/AdrianMikk/SemesterProject/assets/113434165/4899593f-a118-4963-9117-761159fa36e1)
 
