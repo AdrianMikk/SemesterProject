@@ -2,7 +2,11 @@
 
 ![csm](https://github.com/AdrianMikk/SemesterProject/assets/113434165/4899593f-a118-4963-9117-761159fa36e1)
 
-For this semester project we were tasked to make prototype and a working site for a museum called the Community Science Museum. It's core target audience was primary and middle school children for the age of 7-15 and families with young children.
+Community Science Museum is a website that I created for my Semester Project 1 at Noroff University.
+
+# Description 
+
+We were tasked to make prototype and a working site for a museum called the Community Science Museum. It's core target audience was primary and middle school children for the age of 7-15 and families with young children.
 
 # Built With
 
