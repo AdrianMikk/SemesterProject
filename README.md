@@ -17,8 +17,9 @@ We were tasked to make prototype and a working site for a museum called the Comm
 
 # Getting Started 
 ### Executing Program 
-- Figma: https://www.figma.com/file/ibhDljRt5O9g6oIjrrP6kE/Community-Science-Museum?node-id=0%3A1&t=t6zOSzmviB35JjPr-1
-- Netlify: https://animated-kashata-474c4e.netlify.app/
+
+* [Website](https://animated-kashata-474c4e.netlify.app/)
+* [Figma](https://www.figma.com/file/ibhDljRt5O9g6oIjrrP6kE/Community-Science-Museum?node-id=0%3A1&t=t6zOSzmviB35JjPr-1)
 
 # Contact 
 
@@ -27,5 +28,5 @@ We were tasked to make prototype and a working site for a museum called the Comm
 
 # Acknowledgments 
 
-Hello.
+I want to thank people in the class discord group for always having nice inputs and feedback. 
 
