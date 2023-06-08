@@ -1,6 +1,6 @@
 # SemesterProject 1 - Community Science Museum
 
-![csm](https://github.com/AdrianMikk/SemesterProject/assets/113434165/4899593f-a118-4963-9117-761159fa36e1)
+![csm](https://github.com/AdrianMikk/SemesterProject/assets/113434165/1d41cc51-5d41-46c6-b7d8-a5f369208e12)
 
 Community Science Museum is a website that I created for my Semester Project 1 at Noroff University.
 
