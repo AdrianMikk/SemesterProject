@@ -13,7 +13,6 @@ We were tasked to make prototype and a working site for a museum called the Comm
 - HTML
 - CSS
 - JavaScript 
-- Wordpress
 
 # Getting Started 
 ### Executing Program 
